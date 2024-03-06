@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+body{
+    height: 100%;
+    background-color: #004954;
+}
+
+#image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    background-color: #fff;
+    width: 60%;
+    margin: 1rem auto 0;
+}
+
+img{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-container{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    background-color: #fff;
+    width: 60%;
+    margin: 0 auto 2.5rem;
+    padding-bottom: 1rem;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: 2px solid;
+    background-color: #fff;
+    border-radius: 15px;
+    font-size: 1.2rem;
+}
+
+#sunrise{
+    border-color: #004954;
+    color: #004954;
+}
+
+#sunrise:hover{
+    background-color: #004954;
+    color: white;
+}
+
+#morning{
+    border-color: #D8AB1C;
+    color: #D8AB1C;
+}
+
+#morning:hover{
+    background-color: #D8AB1C;
+    color: white;
+}
+
+#afternoon{
+    border-color: #E46300;
+    color: #E46300;
+}
+
+#afternoon:hover{
+    background-color: #E46300;
+    color: white;
+}
+
+#evening{
+    border-color: #001D39;
+    color: #001D39;
+}
+
+#evening:hover{
+    background-color: #001D39;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    background-color: #004954;
+    padding: 1.5rem;
+    color: white;
+    border-top: 5px solid #fff;
+}
+
+@media (max-width: 1000px){
+    #button-container{
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    button{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #image-container{
+        height: 50vh;
+    }
+}
+
+@media (max-width: 700px){
+    #button-container{
+        padding: 1rem;
+        width: 60vh;
+    }
+
+
+    button{
+        width: 60%;
+        margin: 0 auto;
+        height: 50%;
+    }
+
+    #image-container{
+        height: 50vh;
+        width: 60vh;
+    }
+}
+
+@media (max-width: 470px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    #image-container{
+        height: 50vh;
+        width: 100%;
+    }
+
+    #button-container{
+        width: 100%;
+    }
+
+    footer{
+        border: none;
+    }
+}
